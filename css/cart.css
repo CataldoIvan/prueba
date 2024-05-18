@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Exa:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    color: #54595f;
+
+}
+
+
+.cart{
+    background-color: white;
+    font-family: Lato, sans-serif;
+    width: 100%;
+}
+
+.contenedor {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+}
+
+
+
+.divtabla {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.tabla {
+    border: solid lightgray 1px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;}
+
+.divtabla2 {
+
+    margin-top: 3%;
+}
+
+
+.tabla-row{
+    border: solid lightgray 1px;
+    line-height: 40px;
+
+}
+
+.table-header {
+    background: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.input-cupon{
+
+    min-width: 80px;
+    width: 30%;
+    
+}
+
+.div-cupones{
+    display:flex;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.button-cupon {
+    text-align: center;
+    background-color: #0075be;
+    color:white;
+    border: #0075be solid;
+    line-height: 140%;
+    min-width: 100px;
+    margin-left:10%
+
+
+}
+
+.button-update {
+    background-color: #0084d6;
+    color:white;
+    border: #0084d6 solid;
+    line-height: 140%;
+    width: 20%;
+    min-width: 92px;
+
+}
+
+.button-remove{
+    background:white;
+    border:0;
+}
+input{
+    height: 50%;
+    width: 50px;
+    border: lightgray 1px solid;
+    text-align: center;
+    
+}
+
+th, td {
+    padding-left: 10px;
+    padding-right: 10px;    
+    text-align: left;
+
+}
+
+.remove-icon{
+    width:0.9em;
+}
+
+.img-remove{
+    width:1em;
+}
+
+.imagen-producto{
+    display:flex;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+    
+}
+
+
+
+.tabla-row2{
+    border: solid lightgray 1px;
+    line-height: 30px;
+}
+
+.tabla2{
+    border: solid lightgray 1px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 300px;;
+
+}
+
+.button-pagar {
+    margin-top: 7px;
+    height: 30px;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 14px;;
+
+    background-color: #0075be;
+    color:white;
+    border: #0075be solid;
+}
+
+h2{
+    font-size: 16px;
+}
+
+
+form{
+    width: 100%;
+}
+
+.last-row{
+    display:flex;
+    width:100%;
+
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 769px){
+    .tabla2{
+        width: 100%;
+        min-width: 100%;
+    }
+    .divtabla2{
+        width:100%;
+        min-width:100%;
+    }
+    .contenedor{
+        width: 85%;
+    }
+    #table-header1{
+        display:none;
+    }
+    .tabla tbody,.tabla tr{
+        display: block;
+    }
+    .tabla td{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right:10%;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .tabla tr{
+        border: 1px solid lightgrey;
+        border-collapse: collapse;
+        line-height: 40px;
+        width:100%;
+        margin-bottom: 10px;
+    }
+
+    .tabla tr,.tabla2 tr{
+        font-size: 18px;
+    }
+
+
+    .tabla td::before{
+
+        font-weight: bolder;
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    
+    .tabla td:nth-of-type(3):before {
+        content: "Producto: ";
+
+    }
+    .tabla td:nth-of-type(4):before {
+        content: "Price: ";
+    }
+    
+    .tabla td:nth-of-type(5):before {
+        content: "Quantity: ";
+    }
+    
+    .tabla td:nth-of-type(6):before {
+        content: "Subtotal: ";
+    }
+
+    .tabla td:nth-of-type(6){
+        margin-bottom: 10px;
+    }
+
+
+    .tabla td:before {
+        margin-right: 15px;
+        text-align: left;
+    }
+    .tabla td:nth-of-type(2){
+        margin:0;
+    }
+    .imagen-producto{
+        margin: auto;
+        height: 120px;
+        width: 120px;
+    }
+
+    .tabla td:nth-of-type(1){
+        margin:0;
+    }
+    .button-remove{
+        margin-left:96%;
+    }
+
+    .button-pagar{
+        font-size: 18px;
+    }
+    
+    .tabla2 td{
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    .last-row{
+        display:flex;
+        margin:0;
+        align-items: center;
+
+    }
+
+}
+
+@media (max-width: 426px){
+
+    .contenedor{
+        width: 100%;
+    }
+
+    .button-remove{
+        margin-left:94%;
+    }
+
+    .button-update{
+        margin-top:5px;
+        flex-grow: 1;
+    }
+    .last-row{
+        flex-wrap: wrap;
+    }
+
+    .div-cupones{
+        justify-content: space-around;
+        
+    }
+
+    .cupon-button{
+        margin-left:0;
+    }
+}

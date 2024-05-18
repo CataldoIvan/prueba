@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+	* {
+		font-family: 'lato', sans-serif;
+
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	/* CARD PRODUCTS */
+
+	
+
+	h1.products-page-title {
+		font-size: 3.8rem;
+	}
+
+	.description-panel {
+		line-height: 1.8rem;
+	}
+
+	@media only screen and (max-width: 425px) {
+
+		/* Agrega aquí tus estilos específicos para celular */
+		.container.main.store {
+			font-size: 0.9rem;
+		}
+		h1.products-page-title {
+		font-size: 32px;
+	}
+
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+		/* Agrega aquí tus estilos específicos para tablets */
+		.store-section {
+			padding: 20px;
+		}
+
+	}
+
+	/* Estilos para pantallas de monitores (más de 1024px) */
+	@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+		.store-section {
+			padding: 50px;
+		}
+		.container.main.store {
+			font-size: 0.9rem;
+		}
+	}
+
+	/* Estilos para pantallas de monitores (más de 1440px) */
+	@media only screen and (min-width: 1440px) {
+		.store-section {
+			padding: 40px 100px 100px 100px;
+		}
+	}
+
+	/* FIN CARDS PRODUCTS */
+
+	/* FILTROS */
+	/*CATEGORIES*/
+	.li-categories {
+		list-style: none;
+
+	}
+
+	.a-categories {
+		color: black;
+		text-decoration: none;
+
+	}
+
+	.a-categories:hover {
+		color: #4169e1
+	}
+
+	/* FIN FILTROS */
+
+	/*best-sales-section*/
+	.best-sales-section .img-fluid {
+		width: 75px;
+		height: 75px;
+	}
+
+	/* .best-sales-section.card {
+		border-radius: none;
+		border: none;
+	} */
+	div.best-sales-section > div{
+		border:none
+	}
+	/* FIN best-sales-section*/
